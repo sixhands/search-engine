@@ -1,0 +1,106 @@
+.login-popup {
+  margin: auto;
+  background-color: #FFF;
+  box-shadow: 0px 8px 10px rgba(0, 0, 0, 0.25);
+  padding: 20px;
+  display: flex;
+  position: relative;
+  height: 250px;
+  max-width: 90%;
+}
+.login-popup__close {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+}
+.login-popup > div{
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  font-size: 20px;
+}
+.login-popup > div a {
+  color: #F25422;
+
+}
+.login-popup > div:last-child {
+  text-align: center;
+}
+.login-popup__socials > a {
+  margin: 0 6px;
+}
+.login-popup__delimiter {
+  border-right: 1px solid #929090;
+  width: 0 !important;
+  margin: 0 20px;
+}
+.login-popup__form {
+
+}
+.login-popup__form input {
+  border: 0.2px solid #000000;
+  border-radius: 5px;
+  height: 40px;
+  width: 100%;
+  margin: 10px 0;
+  padding: 0 10px;
+}
+.login-popup__form input[type!="submit"] {
+
+}
+.login-popup__form input[type="submit"] {
+  background-color: #F25422;
+  color: #FFF;
+  border: none;
+}
+.login-popup__reset {
+  font-weight: 300;
+  font-size: 12px;
+}
+.login-popup__message {
+  font-weight: 300;
+  font-size: 8px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 10px;
+}
+.login-popup__message.ok {
+  color: #24CB35;
+}
+.login-popup__message.err {
+  color: #DE1313;
+}
+.login-popup__message.ok:before,
+.login-popup__message.err:before {
+  content: '';
+  display: inline-block;
+  margin-right: 3px;
+  width: 10px;
+  height: 10px;
+}
+.login-popup__message.ok:before {
+  background-image: url('../common/svg/ok.svg');
+}
+.login-popup__message.fail:before {
+  background-image: url('../common/svg/fail.svg');
+}
+
+@media screen and (max-width: 1000px) {
+  .login-popup {
+    flex-direction: column;
+    height: auto;
+    text-align: center;
+  }
+  .login-popup > div {
+    width: auto;
+  }
+  .login-popup__delimiter {
+    display: none;
+  }
+  .login-popup__socials {
+    margin-top: 10px;
+
+  }
+}

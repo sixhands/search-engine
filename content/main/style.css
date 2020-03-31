@@ -1,0 +1,118 @@
+.content-1__top {
+  margin: 70px auto 100px auto;
+  max-width: 500px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: center;
+}
+.content-1__top__descr {
+  margin: 20px 0;
+  font-weight: 300;
+  font-size: 25px;
+  line-height: 34px;
+}
+.content-1__top__input {
+  position: relative;
+  margin-bottom: 30px;
+}
+.content-1__top__input img {
+  position: absolute;
+  right: 15px;
+  top: 15px;
+  width: 40px;
+  height: 40px;
+  z-index: 2;
+}
+.content-1__top__input input {
+  height: 70px;
+  border-radius: 100px;
+  border: none;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  border: 0.5px solid #ECE4D0;
+  color: #929090;
+  text-align: center;
+  font-weight: 200;
+  font-size: 21px;
+  width: 100%;
+  padding: 20px 70px;
+  z-index: 2;
+  position: relative;
+}
+.content-1__top__input.list-opened input {
+  box-shadow: none;
+}
+.content-1__top__input:not(.list-opened) .content-1__top__results {
+  display: none;
+}
+.content-1__top__results {
+  position: absolute;
+  top: 0;
+  width: 100%;
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.25);
+  border-radius: 50px;
+  overflow: hidden;
+  padding: 80px 0 10px 0;
+  background-color: #FFF;
+}
+.content-1__top__results > a {
+  display: flex;
+  align-items: center;
+  padding: 10px 10px 10px 30px;
+  color: #C4C4C4;
+  text-align: left;
+}
+.content-1__top__results > a:hover {
+  background-color: rgba(0, 0, 0, 0.05);
+}
+.content-1__top__results > a:before {
+  content: '';
+  display: block;
+  width: 16px;
+  height: 16px;
+  background-image: url('../../common/svg/search-icon-2.svg');
+  float: left;
+  margin-right: 10px;
+}
+.content-1__top__location {
+
+}
+.content-1__bottom {
+  display: flex;
+  justify-content: space-between;
+  margin: 0 80px;
+}
+.content-1__bottom > div {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  align-items: center;
+  width: 300px;
+  margin: 0 20px;
+}
+.content-1__bottom > div > h4 {
+  margin: 0;
+}
+.content-1__bottom > div > a {
+  margin: 3px 0;
+}
+.content-1__bottom__delimiter {
+  border-bottom: 0.5px solid #000000;
+  width: 200px;
+  margin: 10px 0;
+}
+
+@media screen and (max-width: 1000px) {
+  .content-1__top__input,
+  .content-1__top__location {
+    display: none;
+  }
+  .content-1__bottom {
+    flex-direction: column;
+    width: 300px;
+    margin: auto;
+  }
+  .content-1__bottom > div {
+    margin: 0 0 20px 0;
+  }
+}
