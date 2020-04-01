@@ -5,7 +5,6 @@
   padding: 20px;
   display: flex;
   position: relative;
-  height: 250px;
   max-width: 90%;
 }
 .login-popup__close {

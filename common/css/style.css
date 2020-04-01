@@ -26,6 +26,11 @@ a {
 a.active {
   color: var(--color-1);
 }
+select:active, select:focus{
+  outline:none;
+  border: none;
+}
+
 .bkg-img,
 .bkg-img:before,
 .bkg-img:after {
