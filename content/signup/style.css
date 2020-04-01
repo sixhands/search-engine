@@ -1,0 +1,128 @@
+.signup__cont {
+  max-width: 600px;
+  margin: auto;
+  padding: 0 20px;
+}
+.signup__title {
+  font-weight: 200;
+  text-align: center;
+  margin-bottom: 20px;
+}
+.signup__socials {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+.signup__socials > a {
+  width: calc(50% - 10px);
+  height: 40px;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  border-radius: 5px;
+  text-align: center;
+  padding: 5px;
+  line-height: 30px;
+}
+.signup__socials > a:first-child {
+  background-color: #395185;
+  color: #FFF;
+
+}
+.signup__socials > a:before {
+  content: '';
+  float: left;
+  width: 30px;
+  height: 30px;
+}
+.signup__socials > a:first-child:before {
+  background-image: url('../common/svg/fb-logo.svg');
+}
+.signup__socials > a:last-child:before {
+  background-image: url('../common/svg/google-logo.svg');
+}
+.signup__delimiter {
+  display: flex;
+  margin: 20px 0;
+}
+.signup__delimiter > div {
+  font-weight: 200;
+  padding: 0 10px;
+  display: inline-block;
+}
+.signup__delimiter:before,
+.signup__delimiter:after {
+  content: '';
+  flex: 1;
+  display: inline-block;
+  border-bottom: 0.2px solid #929090;
+  position: relative;
+  bottom: 8px;
+}
+.signup__form {
+  padding: 0 10px;
+}
+.signup__form > label {
+
+}
+.signup__form > input,
+.signup__form > select {
+  width: 100%;
+  border-radius: 5px;
+  height: 40px;
+  border: none;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+}
+.signup__form > select {
+  background-color: #C4C4C4;
+}
+.signup__form > input:not([type="submit"]),
+.signup__form > select {
+ border: 0.2px solid #000000;
+ margin-bottom: 10px;
+ padding: 0 10px;
+}
+.signup__form > input[type="submit"] {
+  background-color: #0D961B;
+  color: #FFF;
+  margin-top: 20px;
+}
+.signup__form__label {
+  display: flex;
+  align-items: center;
+  margin-bottom: 5px;
+  position: relative;
+}
+.signup__form__label > span {
+  display: none;
+  font-weight: 300;
+  font-size: 8px;
+  color: #DE1313;
+  margin-left: 10px;
+}
+.signup__form__label.error > span {
+  display: unset;
+}
+.signup__form__label.error:before {
+  content: '';
+  display: block;
+  background-image: url('../common/svg/error.svg');
+  width: 20px;
+  height: 20px;
+  position: absolute;
+  left: -40px;
+  bottom: -35px;
+}
+
+@media screen and (max-width: 1000px) {
+  .signup__socials > a {
+    width: 100%;
+    margin: 5px 0;
+  }
+  .signup__form__label.error:before {
+    width: 12px;
+    height: 12px;
+    left: -20px;
+    bottom: -31px;
+  }
+}
