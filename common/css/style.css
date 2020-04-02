@@ -54,3 +54,41 @@ select:active, select:focus{
   z-index: 100;
   display: flex;
 }
+
+.radio {
+  display: inline-block;
+  width: 20px;
+  height: 20px;
+  border-radius: 100px;
+  border: 0.2px solid #000000;
+  margin-right: 10px;
+}
+.radio:before {
+  content: '';
+  display: block;
+  width: 8px;
+  height: 8px;
+  background-color: #F25422;
+  border-radius: 100px;
+  position: relative;
+  top: 5px;
+  left: 5px;
+}
+input:not(:checked) + .radio:before {
+  display: none;
+}
+input:checked ~ * {
+  color: #F25422;
+}
+
+.main__path {
+  margin: 0 0 30px 20px;
+}
+.main__path,
+.main__path a {
+  color: #F25422;
+}
+
+.main__text {
+  padding: 0 20px;
+}
