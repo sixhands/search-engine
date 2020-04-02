@@ -1,0 +1,109 @@
+.account__cont {
+  padding: 0 20px;
+  display: flex;
+}
+.account__header {
+  font-weight: 300;
+  font-size: 27px;
+  margin-bottom: 20px;
+}
+.account__info {
+  width: 300px;
+  padding: 10px 30px 10px 0;
+  margin-right: 30px;
+  border-right: 0.2px solid #000000;
+}
+.account__info__name {
+  font-weight: 300;
+  font-size: 27px;
+  margin-bottom: 20px;
+}
+.account__info__email {
+  margin-bottom: 30px;
+  color: #929090;
+}
+.account__info__email > input {
+  background: #C4C4C4;
+  border: none;
+  border-radius: 5px;
+  height: 40px;
+  width: 100%;
+  color: #AC9898;
+  padding: 0 10px;
+}
+.account__info__options > *:not(label) {
+  font-weight: 200;
+  color: #929090;
+}
+.account__info__options > label {
+  display: flex;
+  align-items: center;
+  margin: 10px 0;
+}
+.account__info__options input {
+  display: none;
+}
+.account__subscr {
+
+}
+.account__subscr__items {
+  display: flex;
+
+}
+.account__subscr__items__col {
+  margin-right: 40px;
+}
+.account__subscr__item {
+  margin-bottom: 20px;
+}
+.account__subscr__item__delete {
+  float: right;
+}
+.account__subscr__item__title {
+  margin-bottom: 10px;
+  font-weight: 300;
+  font-size: 20px;
+}
+.account__subscr__item__actual,
+.account__subscr__item__price {
+  color: #AC9898;
+  display: flex;
+  align-items: center;
+  margin: 5px 0;
+}
+.account__subscr__item__actual:before,
+.account__subscr__item__price:before {
+  content: '';
+  width: 14px;
+  height: 14px;
+  float: left;
+  margin-right: 10px;
+}
+.account__subscr__item__actual:before {
+  background-image: url('../common/svg/time.svg');
+}
+.account__subscr__item__price:before {
+  background-image: url('../common/svg/price.svg');
+}
+.account__subscr__item__actual {
+
+}
+.account__subscr__item__price {
+
+}
+
+@media screen and (max-width: 1000px) {
+  .account__cont {
+    display: block;
+  }
+  .account__info {
+    width: 100%;
+    border: none;
+  }
+  .account__subscr__items {
+    flex-direction: column;
+  }
+  .account__subscr__items__col {
+    margin: 0;
+  }
+}
