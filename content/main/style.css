@@ -38,9 +38,11 @@
   font-weight: 200;
   font-size: 21px;
   width: 100%;
-  padding: 20px 70px;
+  padding: 20px 70px 20px 40px;
   z-index: 2;
   position: relative;
+  text-align: left;
+  outline: none;
 }
 .content-1__top__input.list-opened input {
   box-shadow: none;
