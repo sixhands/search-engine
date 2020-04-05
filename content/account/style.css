@@ -11,7 +11,7 @@
   width: 300px;
   padding: 10px 30px 10px 0;
   margin-right: 30px;
-  border-right: 0.2px solid #000000;
+  border-right: 0.5px solid rgba(0,0,0,0.6);
 }
 .account__info__name {
   font-weight: 300;
@@ -22,14 +22,29 @@
   margin-bottom: 30px;
   color: #929090;
 }
-.account__info__email > input {
-  background: #C4C4C4;
-  border: none;
+.account__info__email__input {
+  border: 0.5px solid rgba(0,0,0,0.6);
+  border-radius: 5px;
+  position: relative;
+}
+.account__info__email__input > input {
   border-radius: 5px;
   height: 40px;
   width: 100%;
-  color: #AC9898;
-  padding: 0 10px;
+  padding: 0 50px 0 10px;
+  border: none;
+}
+.account__info__email__input > a {
+  width: 41px;
+  height: 41px;
+  position: absolute;
+  right: -0.5px;
+  top: -0.5px;
+  background-color: #4CAF50;
+  border-radius: 5px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 .account__info__options > *:not(label) {
   font-weight: 200;
@@ -57,7 +72,7 @@
   margin-bottom: 20px;
 }
 .account__subscr__item__delete {
-  float: right;
+  margin-left: 10px;
 }
 .account__subscr__item__title {
   margin-bottom: 10px;
@@ -68,22 +83,21 @@
 .account__subscr__item__price {
   color: #AC9898;
   display: flex;
-  align-items: center;
   margin: 5px 0;
 }
 .account__subscr__item__actual:before,
 .account__subscr__item__price:before {
   content: '';
-  width: 14px;
-  height: 14px;
+  width: 16px;
+  height: 16px;
   float: left;
-  margin-right: 10px;
+  margin: 4px 10px 0 0;
 }
 .account__subscr__item__actual:before {
-  background-image: url('../common/svg/time.svg');
+  background-image: url('../../common/svg/time.svg');
 }
 .account__subscr__item__price:before {
-  background-image: url('../common/svg/price.svg');
+  background-image: url('../../common/svg/price.svg');
 }
 .account__subscr__item__actual {
 

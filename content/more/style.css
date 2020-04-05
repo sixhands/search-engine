@@ -21,7 +21,7 @@
 }
 .more__delimiter {
   width: 60%;
-  border-bottom: 0.2px solid #000000;
+  border-bottom: 0.5px solid rgba(0,0,0,0.6);
   margin: auto;
   display: none;
 }

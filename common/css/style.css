@@ -30,6 +30,9 @@ select:active, select:focus{
   outline:none;
   border: none;
 }
+input {
+  outline: none;
+}
 
 .bkg-img,
 .bkg-img:before,
@@ -60,7 +63,7 @@ select:active, select:focus{
   width: 20px;
   height: 20px;
   border-radius: 100px;
-  border: 0.2px solid #000000;
+  border: 0.5px solid rgba(0,0,0,0.6);
   margin-right: 10px;
 }
 .radio:before {
