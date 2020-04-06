@@ -1,21 +1,19 @@
+<?php $page = preg_replace('/[^a-z\-_]/', '', $_GET['page'] ) ?>
 <html>
   <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
     <link rel="stylesheet" type="text/css" href="../../common/css/style.css"/>
     <link rel="stylesheet" type="text/css" href="../main.css"/>
+    <link rel="stylesheet" type="text/css" href="../../content/<?php echo $page ?>/style.css"/>
     <title>{{ title }}</title>
   </head>
   <body><div id="content">
-
-    <div class="main__header main__header_alt-1">
+    <div class="main__header">
       <div class="main__header__left">
-        <a href="##"><img src="../../common/img/main-logo-mid.png"/></a>
-      </div>
-
-      <div class="main__header__input">
-        <div><input type="text"/><a href="##"><img src="../../common/svg/search-icon.svg"/></a></div>
-        <a href="##"><img src="../../common/img/flag-ru.png"/></a>
+        <a href="##">Покупателю</a>
+        <span>|</span>
+        <a href="##">Поставщику</a>
       </div>
 
       <div class="main__header__right">
@@ -28,21 +26,21 @@
         <a href="##">Покупателю</a>
         <span>|</span>
         <a href="##">Поставщику</a>
-        <div class="main__header__left__location"><a href="##"><img src="../../common/img/flag-ru.png"/></a></div>
       </div>
 
       <div class="main__header__right">
         <a class="main__header__signin bkg-img" href="##">Вход</a>
+        <a class="main__header__lang bkg-img" href="##">RU</a>
       </div>
 
       <div class="main__header__input">
-        <a href="##"><img class="logo" src="../../common/img/main-logo-small.png"/></a>
+        <a href="##"><img src="../../common/img/main-logo-small.png"/></a>
         <div><input type="text"/><a href="##"><img src="../../common/svg/search-icon.svg"/></a></div>
       </div>
     </div>
 
     <div class="main__content">
-      {{ content }}
+      <?php include("../../content/$page/index.html") ?>
     </div>
 
     <div class="main__footer">

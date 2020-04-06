@@ -1,9 +1,11 @@
+<?php $page = preg_replace('/[^a-z\-_]/', '', $_GET['page'] ) ?>
 <html>
   <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
     <link rel="stylesheet" type="text/css" href="../../common/css/style.css"/>
     <link rel="stylesheet" type="text/css" href="../main.css"/>
+    <link rel="stylesheet" type="text/css" href="../../content/<?php echo $page ?>/style.css"/>
     <title>{{ title }}</title>
   </head>
   <body><div id="content">
@@ -25,7 +27,7 @@
     </div>
 
     <div class="main__content">
-      {{ content }}
+      <?php include("../../content/$page/index.html") ?>
     </div>
 
     <div class="main__footer">

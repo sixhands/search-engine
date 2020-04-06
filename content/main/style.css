@@ -84,7 +84,15 @@
 .content-1__bottom {
   display: flex;
   justify-content: space-between;
-  margin: 0 80px;
+}
+.content-1__bottom,
+.content-1__text {
+  max-width: 1000px;
+  margin: auto;
+}
+.content-1__text {
+  text-align: center;
+  margin-top: 80px;
 }
 .content-1__bottom > div {
   display: flex;
