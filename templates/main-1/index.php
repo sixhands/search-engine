@@ -18,6 +18,7 @@
 
       <div class="main__header__right">
         <a class="main__header__signin bkg-img" href="##">Вход</a>
+        <a class="main__header__lang bkg-img" href="##">RU</a>
       </div>
     </div>
 

@@ -7,9 +7,6 @@
   font-size: 22px;
   margin: 10px 0;
 }
-.results__text {
-  padding: 0 20px;
-}
 .results__items {
   max-width: 700px;
 }
@@ -137,6 +134,9 @@
 @media screen and (max-width: 1000px) {
   .results__cont {
     padding: 0;
+  }
+  .results__text {
+    padding: 0 20px;
   }
   .results__row {
     margin: 0;

@@ -78,9 +78,6 @@
   float: left;
   margin-right: 10px;
 }
-.content-1__top__location {
-
-}
 .content-1__bottom {
   display: flex;
   justify-content: space-between;
@@ -115,8 +112,7 @@
 }
 
 @media screen and (max-width: 1000px) {
-  .content-1__top__input,
-  .content-1__top__location {
+  .content-1__top__input {
     display: none;
   }
   .content-1__bottom {

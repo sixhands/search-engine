@@ -35,13 +35,10 @@
   background-image: url('../common/svg/signin.svg');
 }
 .main__header__lang {
-  display: none;
+  display: flex;
   margin-left: 20px;
   text-decoration-line: underline;
   align-items: center;
-}
-.main__header_alt-1 .main__header__lang {
-  display: flex;
 }
 .main__header__lang:after{
   content: '';
@@ -171,9 +168,6 @@
   .main__header,
   .main__header a {
     font-size: 12px;
-  }
-  .main__header__lang {
-    display: flex;
   }
   .main__header__input {
     display: flex;

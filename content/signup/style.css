@@ -25,7 +25,6 @@
 .signup__socials > a:first-child {
   background-color: #395185;
   color: #FFF;
-
 }
 .signup__socials > a:before {
   content: '';
@@ -34,10 +33,10 @@
   height: 30px;
 }
 .signup__socials > a:first-child:before {
-  background-image: url('../common/svg/fb-logo.svg');
+  background-image: url('../../common/svg/fb-logo.svg');
 }
 .signup__socials > a:last-child:before {
-  background-image: url('../common/svg/google-logo.svg');
+  background-image: url('../../common/svg/google-logo.svg');
 }
 .signup__delimiter {
   display: flex;
