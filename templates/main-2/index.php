@@ -38,10 +38,27 @@
       </div>
 
       <div class="main__header__input">
-        <a href="##"><img class="logo" src="../../common/img/main-logo-small.png"/></a>
-        <div><input type="text"/><a href="##"><img src="../../common/svg/search-icon.svg"/></a></div>
+        <a href="##"><img src="../../common/img/main-logo-small.png"/></a>
+        <div>
+          <input type="text" onfocus="document.querySelector('.mobile-search').classList.add('show')"/>
+          <a href="##"><img src="../../common/svg/search-icon.svg"/></a>
+        </div>
       </div>
     </div>
+
+    <div class="mobile-search">
+      <div class="mobile-search__input">
+        <input type="text" placeholder=""/><a href="##">
+        <img src="../../common/svg/search-icon.svg"/></a>
+      </div>
+      <div class="mobile-search__results">
+        <a class="bkg-img" href="##">Гипсокартон</a>
+        <a class="bkg-img" href="##">Гипсокартон</a>
+        <a class="bkg-img" href="##">Гипсокартон</a>
+        <a class="bkg-img" href="##">Гипсокартон</a>
+      </div>
+    </div>
+
 
     <div class="main__content">
       <?php include("../../content/$page/index.html") ?>
